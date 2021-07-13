@@ -14,7 +14,9 @@
         {% csrf_token %}
     <input type="hidden" name="next" value="{{ next }}" />
     <p><input type="submit" value="Вход"></p>
+    <a href="{% url "student_registration" %}" class="button">Регистрация</a>
     </form>
+
     </div>
  </div>
 {% endblock %}
